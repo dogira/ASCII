@@ -14,13 +14,13 @@ const Header = () => {
     }
   }
 
-  Object.values(items).forEach(item => pushed.push(<em><a href="{item.link}" rel="noreferrer" target="_blank">{item.name}</a> -- </em>));
+  Object.values(items).forEach(item => pushed.push(<em><a class="item" href="{item.link}" rel="noreferrer" target="_blank">{item.name}</a> -- </em>));
 
   let last = pushed.pop()["props"]["children"][0]; // Jerry rigged the fuck out of this
 
   return (
-    <div>
-      <h4>dogira.eth</h4>
+    <div class="box">
+      <h4 class="title">dogira.eth</h4>
       <div class="row">
         <p class="items">
           {pushed.splice(0, pushed.length)}{last}

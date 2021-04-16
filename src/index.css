@@ -1,16 +1,16 @@
-/*@font-face {
-    font-family: 'Monaco';
-    src: local('Monaco'), url('./assets/Monaco.ttf') format('truetype');
-}*/
+@font-face {
+  font-family: 'Dank Mono Regular';
+  src: local('Dank Mono Regular'), url('./assets/DankMono-Regular.ttf') format('truetype');
+}
 
 @font-face {
-  font-family: 'Dank Mono';
-  src: url('%PUBLIC_URL%/DankMono_Regular.ttf');
+  font-family: 'Dank Mono Italic';
+  src: local('Dank Mono Italic'), url('./assets/DankMono-Italic.ttf') format('truetype');
 }
 
 body {
   margin: 0;
-  font-family: 'Dank Mono';
+  font-family: 'Dank Mono Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

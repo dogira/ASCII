@@ -1,3 +1,17 @@
+.box {
+  margin-left: 4vw;
+  font-size: 1.3em;
+}
+
+.title {
+  font-family: 'Dank Mono Italic';
+}
+
+.item {
+  color: #61dafb;
+  font-size: 1em;
+}
+
 em {
   font-style: normal;
 }
