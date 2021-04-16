@@ -3,18 +3,18 @@ import './Header.css';
 
 const Header = () => {
   const pushed = [];
-  const items = {
-    uno: {
-      name: 'github',
-      link: 'https://github.com/dogira'
-    },
-    dos: {
-      name: 'code',
-      link: 'https://github.com/dogira/ascii'
-    }
+  const items = [
+  {
+    name: 'github',
+    link: 'https://github.com/dogira'
+  },
+  {
+    name: 'code',
+    link: 'https://github.com/dogira/ascii'
   }
+  ];
 
-  Object.values(items).forEach(item => pushed.push(<em><a class="item" href={item.link} rel="noreferrer" target="_blank">{item.name}</a> -- </em>));
+  items.forEach(item => pushed.push(<em><a class="item" href={item.link} rel="noreferrer" target="_blank">{item.name}</a> -- </em>));
 
   let last = pushed.pop()["props"]["children"][0]; // Jerry rigged the fuck out of this
 
