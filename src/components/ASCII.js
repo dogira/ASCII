@@ -28,12 +28,14 @@ const ASCII = () => {
 
   const masterpiece = [];
 
-  art.forEach(piece => masterpiece.push(<p class="ascii">{piece}</p>));
+  art.forEach(piece => masterpiece.push(<li class="ascii">{piece}</li>));
 
   return (
     <div class="container">
       <pre class="eight columns">
-        {masterpiece}
+        <ul>
+          {masterpiece}
+        </ul>
       </pre>
     </div>
   );
